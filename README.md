@@ -2,6 +2,8 @@
 
 Site to show off changelog page and potentially take over main page
 
+Changelog pages can be found in `src/changelog` directory.
+
 
 ### Requirements
 
@@ -21,6 +23,5 @@ Run
 ```bash
 yarn start
 ```
-
 
 
