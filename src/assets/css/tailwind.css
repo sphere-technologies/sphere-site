@@ -36,9 +36,17 @@
   .changelog-date {
     @apply text-base text-gray-600
   }
-  
+
   article p {
     @apply pb-4
+  }
+
+  article h3 {
+    @apply text-2xl py-3
+  }
+
+  article h2 {
+    @apply text-3xl py-3
   }
 
 }
