@@ -14,9 +14,7 @@
     "dark-purple": "#4F4DA7",
     "core-purple": "#6A67CE",
     "bright-purple": "#A177FF",
-    "core-green": "#3BE8B0",
     
-
     "dark-coral": "#E63B3B",
     "core-coral": "#FC636B",
     "bright-coral": "#FF6D92",
@@ -24,6 +22,7 @@
     "light-coral": "#FEEFF0",
     
     
+    "core-green": "#3BE8B0",
     "dark-green": "#37C597",
     "bright-green": "#3BF7D1",
     "med-green": "#9DFBE8",

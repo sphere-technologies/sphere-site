@@ -14,10 +14,10 @@ layout: base
                     <div class="w-full relative pb-10">
                         <div class="w-full pb-4 md:px-2">
                             <div class="w-full bg-gray-200 h-[340px] justify-center items-center flex flex-col px-6  {% if changelog.data.colorClass %}{{ changelog.data.colorClass }}{% endif %}">
-                                <div class="text-gray-700">
+                                <div class="{% if changelog.data.textColorClass %} {{ changelog.data.textColorClass }} {% else %} text-gray-700  {% endif %}">
                                     {{ changelog.data.title }}
                                 </div>
-                                <div class="text-gray-700 font-medium text-2xl w-full text-center">
+                                <div class="font-medium text-2xl w-full text-center {% if changelog.data.textColorClass %} {{ changelog.data.textColorClass }} {% else %} text-gray-700  {% endif %}">
                                     {{ changelog.data.description }}
                                 </div>
                             </div>
