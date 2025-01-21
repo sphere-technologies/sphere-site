@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            {% if site.title %}{{ site.title }}
+            {% endif %}
+        </title>
+        <link rel="stylesheet" href="/assets/css/tailwind.css">
+    </head>
+    <body class="">
+        <header class="w-full flex justify-center md:px-4 md:py-4">
+            <nav class="w-full justify-between flex">
+                <div class="brand-name">
+                    <a href="/">SPHERE</a>
+                </div>
+                <ul class="flex px-4">
+                    <li class="nav-item">
+                        <a href="/">Changelog</a>
+                    </li>
+                    {# {# <li class="nav-item">
+                        <a href="/about">About</a>
+                    </li> #}
+                    <li class="nav-item">
+                        <a href="https://dev.sphereinsight.com">Dashboard</a>
+                    </li> 
+                </ul>
+            </nav>
+        </header>
+
+        <main class="">
+            {{ content | safe }}
+        </main>
+
+        <footer class="bg-black text-white py-12 px-4">
+            <div class="brand-name">SPHERE</div>
+            {# <p>&copy; {{ site.year }} My Site. All rights reserved.</p> #}
+        </footer>
+    </body>
+</html>

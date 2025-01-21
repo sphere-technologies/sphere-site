@@ -1,0 +1,16 @@
+---
+layout: base
+---
+
+<article class="flex w-full justify-center pt-20">
+    <div class="w-[680px] relative">
+        <header class="px-2">
+            <h1 class="changelog-heading py-1">{{ title }}</h1>
+            <h3 class="changelog-subheading py-1">{{ description }}</h3>
+            <time class="changelog-date py-1" datetime="{{ date | dateIso }}">{{ date | dateReadable }}</time>
+        </header>
+        <div class="px-2 pt-12 pb-16">
+            {{ content | safe }}
+        </div>
+    </div>
+</article>

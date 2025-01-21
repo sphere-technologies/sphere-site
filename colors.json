@@ -1,0 +1,48 @@
+{
+    "gray-1": "#F8F8F9",
+    "gray-2": "#EFF0F1",
+    "gray-3": "#E1E2E4",
+    "gray-4": "#CDCFD2",
+    "gray-5": "#B9BCC0",
+    "gray-6": "#A1A4AA",
+    "gray-7": "#898E95",
+    "gray-8": "#676D76",
+    "gray-9": "#49505B",
+    "gray-10": "#1B2432",
+
+
+    "dark-purple": "#4F4DA7",
+    "core-purple": "#6A67CE",
+    "bright-purple": "#A177FF",
+    "core-green": "#3BE8B0",
+    
+
+    "dark-coral": "#E63B3B",
+    "core-coral": "#FC636B",
+    "bright-coral": "#FF6D92",
+    "med-coral": "#FFB6C8",
+    "light-coral": "#FEEFF0",
+    
+    
+    "dark-green": "#37C597",
+    "bright-green": "#3BF7D1",
+    "med-green": "#9DFBE8",
+    "light-green": "#EBFCF7",
+    
+
+    "bar-blue": "#087af7",
+    
+
+    "navy": "#273347",
+
+    "spotify": "#1ED760",
+    "youtube": "#FF0000",
+    "google-analytics": "#FFC107",
+    "facebook": "#4172B8",
+    "google-ads": "#4285F4",
+    "instagram": "#E4405F",
+    "postgresql": "#336791",
+    "redshift": "#2869AC", 
+    "snowflake": "#498BC6", 
+    "bigquery": "#4285f4"
+}
