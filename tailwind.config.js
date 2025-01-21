@@ -4,7 +4,12 @@ module.exports = {
   content: ["./src/**/*.{njk,md}", "./src/**/*.svg",],
   theme: {
     extend: {
-      colors
+      colors,
+      padding: {
+        "1hunnid": '100px',
+        "2hunnid": '200px',
+        "3hunnid": '300px'
+      }
     },
   },
   plugins: [],
