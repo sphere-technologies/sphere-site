@@ -7,7 +7,7 @@ module.exports = function (eleventyConfig) {
 
   
   // Copy the `assets` directory to the output
-  // eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy("src/assets");
 
   // Add date filters
   eleventyConfig.addFilter("dateIso", date => {

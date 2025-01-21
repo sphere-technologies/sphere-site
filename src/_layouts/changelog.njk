@@ -14,3 +14,41 @@ layout: base
         </div>
     </div>
 </article>
+<script>
+    function addLabelToElement(element, labelText, position = 'after') {
+        // Create the label element
+        const label = document.createElement('label');
+        label.textContent = labelText;
+        label
+            .classList
+            .add("image-title")
+
+        // Set a unique ID for the target element if it doesn't have one
+        if (!element.id) {
+            element.id = 'element-' + Math
+                .random()
+                .toString(36)
+                .substr(2, 9);
+        }
+
+        // Associate the label with the element
+        label.htmlFor = element.id;
+
+        // Insert the label based on position preference
+        if (position === 'before') {
+            element
+                .parentNode
+                .insertBefore(label, element);
+        } else {
+            element
+                .parentNode
+                .insertBefore(label, element.nextSibling);
+        }
+
+        return label;
+    }
+
+    const el = document.querySelectorAll("article p img");
+
+    el.forEach(e => addLabelToElement(e, e.title, "after"))
+</script>
