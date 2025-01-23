@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="/assets/css/tailwind.css">
         <link rel="stylesheet" href="/assets/css/index.css">
     </head>
-    <body class="">
+    <body class="flex flex-col min-h-screen">
         <header class="w-full flex justify-center md:px-4 md:py-4">
             <nav class="w-full justify-between flex 2xl:w-[1500px]">
                 <div class="brand-name">
@@ -30,12 +30,28 @@
             </nav>
         </header>
 
-        <main class="">
+        <main class="flex-1">
             {{ content | safe }}
         </main>
 
-        <footer class="bg-black text-white py-12 px-4">
-            <div class="brand-name">SPHERE</div>
+        <footer class="bg-black text-white py-12 px-4 flex flex-col">
+            <div class="brand-name py-2">SPHERE</div>
+            <div class="text-white text-xs px-4 py-2">© Sphere Technologies, Inc. All rights reserved.</div>
+            <div class="px-4">
+                {# <div class="">
+                Policies
+                </div>
+                <div class="">
+                Terms
+                </div> #}
+                <a class="text-xs " href="">
+                Library 
+                </a>
+                <span class="text-xs">/</span>
+                <a class="text-xs" href="https://dev.sphereinsight.com">
+                Login 
+                </a>
+            </div>
             {# <p>&copy; {{ site.year }} My Site. All rights reserved.</p> #}
         </footer>
     </body>
