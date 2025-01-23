@@ -21,7 +21,10 @@
   }
 
   .nav-item {
-    @apply px-3 py-4 text-base hover:underline
+    @apply px-3 py-4
+  }
+  .nav-item a {
+    @apply text-base hover:underline
   }
 
   .brand-name {
