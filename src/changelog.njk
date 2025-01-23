@@ -1,0 +1,35 @@
+---
+layout: base
+---
+<div class="w-full flex justify-center pb-4">
+    <div class="w-[600px] relative">
+        <div class="w-full">
+            <div class="py-10 px-2">
+                <h2 class="page-heading">Changelog</h2>
+            </div>
+
+            {%- for changelog in collections.test-changelogs | reverse %}
+                {% set absolutePostUrl %}{{ changelog.url }}{% endset %}
+                <a href="{{ absolutePostUrl }}">
+                    <div class="w-full relative pb-10">
+                        <div class="w-full pb-4 md:px-2">
+                            <div class="w-full bg-gray-200 h-[340px] justify-center items-center flex flex-col px-6  {% if changelog.data.colorClass %}{{ changelog.data.colorClass }}{% endif %}">
+                                <div class="{% if changelog.data.textColorClass %} {{ changelog.data.textColorClass }} {% else %} text-gray-700  {% endif %}">
+                                    {{ changelog.data.title }}
+                                </div>
+                                <div class="font-medium text-2xl w-full text-center {% if changelog.data.textColorClass %} {{ changelog.data.textColorClass }} {% else %} text-gray-700  {% endif %}">
+                                    {{ changelog.data.description }}
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="article-item-heading py-2 px-3 md:px-2">
+                            {{ changelog.data.title }}
+                        </h3>
+                        <time class="changelog-date px-4 md:px-2" datetime="{{ changelog.data.date | dateIso }}">{{ changelog.data.date | dateReadable }}</time>
+                    </div>
+
+                </a>
+            {%- endfor %}
+            <div class="{% if collections.changelogs | length < 2 %} py-20 {% endif %}" ></div>
+        </div>
+    </div>
