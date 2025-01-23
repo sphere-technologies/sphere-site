@@ -2,35 +2,30 @@
 layout: base
 ---
 <div class="w-full flex justify-center pb-4">
-    <div class="w-[600px] relative">
-        <div class="w-full">
-            <div class="py-10 px-2">
-                <h2 class="page-heading">Changelog</h2>
-            </div>
+    <div class="w-[600px] relative flex flex-col">
+        <h2>
+            EMPOWERING DATA-INFORMED DECISIONS
+        </h2>
+        <h3>
+        About Us
+        </h3>
 
-            {%- for changelog in collections.changelogs | reverse %}
-                {% set absolutePostUrl %}{{ changelog.url }}{% endset %}
-                <a href="{{ absolutePostUrl }}">
-                    <div class="w-full relative pb-10">
-                        <div class="w-full pb-4 md:px-2">
-                            <div class="w-full bg-gray-200 h-[340px] justify-center items-center flex flex-col px-6  {% if changelog.data.colorClass %}{{ changelog.data.colorClass }}{% endif %}">
-                                <div class="{% if changelog.data.textColorClass %} {{ changelog.data.textColorClass }} {% else %} text-gray-700  {% endif %}">
-                                    {{ changelog.data.title }}
-                                </div>
-                                <div class="font-medium text-2xl w-full text-center {% if changelog.data.textColorClass %} {{ changelog.data.textColorClass }} {% else %} text-gray-700  {% endif %}">
-                                    {{ changelog.data.description }}
-                                </div>
-                            </div>
-                        </div>
-                        <h3 class="article-item-heading py-2 px-3 md:px-2">
-                            {{ changelog.data.title }}
-                        </h3>
-                        <time class="changelog-date px-4 md:px-2" datetime="{{ changelog.data.date | dateIso }}">{{ changelog.data.date | dateReadable }}</time>
-                    </div>
+        <span>
+        We’re an ambitious California-based technology startup. Our goal is to help knowledge workers and their respective organizations increase the accuracy and rate of data-informed decisions.   
+       </span>
 
-                </a>
-            {%- endfor %}
+        <span>
+        Our algorithms automatically analyze organizational data as a data scientist would and produce beautiful, personally relevant insights around meaningful discoveries.
+        </span>
 
-            <div class="{% if collections.changelogs | length < 2 %} py-20 {% endif %}" ></div>
-        </div>
+        <span>
+        To learn how Sphere can impact your organization, request a demo or early access here. 
+       </span>
+
+        <h3>
+
+        Work at Sphere
+        </h3>
+        Building intelligent systems is a laborious process. If you want to challenge yourself, experiment, invent, and build in a collaborative environment, please send us a message: hi@sphereinsight.com
     </div>
+</div>
