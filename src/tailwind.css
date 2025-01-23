@@ -69,7 +69,17 @@
   }
 
   h2 {
-    @apply text-lg
+    @apply text-xl text-gray-7
+  }
+
+  h3 {
+    @apply text-lg text-gray-7
+  }
+  h3 {
+    @apply text-base text-gray-7
+  }
+  h4 {
+    @apply text-sm text-gray-7
   }
 
 }
