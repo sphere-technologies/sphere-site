@@ -8,7 +8,7 @@ layout: base
                 <h2 class="page-heading">Changelog</h2>
             </div>
 
-            {%- for changelog in collections.test-changelogs | reverse %}
+            {%- for changelog in collections.changelogs | reverse %}
                 {% set absolutePostUrl %}{{ changelog.url }}{% endset %}
                 <a href="{{ absolutePostUrl }}">
                     <div class="w-full relative pb-10">
