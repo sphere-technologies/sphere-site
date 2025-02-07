@@ -11,29 +11,30 @@
         <link rel="stylesheet" href="/assets/css/index.css">
     </head>
     <body class="flex flex-col min-h-screen">
-        <header class="w-full flex justify-center md:px-4 md:py-4">
-            <nav class="w-full justify-between flex 2xl:w-[1500px]">
-                <div class="brand-name">
-                    <a href="/">SPHERE</a>
-                </div>
-                <ul class="flex px-4">
-                    <li class="nav-item">
-                        <a href="/changelog">Changelog</a>
-                    </li>
-                    {# {# <li class="nav-item">
+        <div class="min-h-screen flex flex-col">
+            <header class="w-full flex justify-center md:px-4 md:py-4">
+                <nav class="w-full justify-between flex 2xl:w-[1500px]">
+                    <div class="brand-name">
+                        <a href="/">SPHERE</a>
+                    </div>
+                    <ul class="flex px-4">
+                        <li class="nav-item">
+                            <a href="/changelog">Changelog</a>
+                        </li>
+                        {# {# <li class="nav-item">
                         <a href="/about">About</a>
                     </li> #}
-                    <li class="nav-item">
-                        <a href="https://dev.sphereinsight.com">Dashboard</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+                        <li class="nav-item">
+                            <a href="https://dev.sphereinsight.com">Dashboard</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
 
-        <main class="flex-1">
-            {{ content | safe }}
-        </main>
-
+            <main class="flex">
+                {{ content | safe }}
+            </main>
+        </div>
         <footer class="bg-black text-white py-12 px-4 flex flex-col">
             <div class="brand-name py-2">SPHERE</div>
             <div class="text-white text-xs px-4 py-2">© Sphere Technologies, Inc. All rights reserved.</div>
