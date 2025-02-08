@@ -72,17 +72,17 @@
   }
 
   h2 {
-    @apply text-xl text-gray-7
+    @apply text-lg text-gray-8 font-bold
   }
 
   h3 {
-    @apply text-lg text-gray-7
+    @apply text-base text-gray-8 font-bold
   }
   h3 {
-    @apply text-base text-gray-7
+    @apply text-sm text-gray-8 font-bold
   }
   h4 {
-    @apply text-sm text-gray-7
+    @apply text-xs text-gray-8 font-bold
   }
 
 }
